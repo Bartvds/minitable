@@ -2,7 +2,7 @@
 
 [![Build Status](https://secure.travis-ci.org/Bartvds/minitable.png?branch=master)](http://travis-ci.org/Bartvds/minitable) [![Dependency Status](https://gemnasium.com/Bartvds/minitable.png)](https://gemnasium.com/Bartvds/minitable) [![NPM version](https://badge.fury.io/js/minitable.png)](http://badge.fury.io/js/minitable)
 
-> Table layout renderer for minimal semantic output styler/writer.
+> Minimal table-layout renderer for output styler/writer.
 
 Used in combination with [minichain](https://github.com/Bartvds/minichain) to write table layouts for minimal semantic output write/stylers. The layout is calculated using a `plain` ministyle and any padding is then applied to a custom style like `ministyle.ansi()` or `ministyle.html()`.
 
@@ -11,7 +11,7 @@ Intend as companion to [miniwrite](https://github.com/Bartvds/miniwrite) and [mi
 ## Installation
 
 ```shell
-$ npm install ministyle --save
+$ npm install minitable --save
 ```
 
 ## API
@@ -38,7 +38,7 @@ See the `Gruntfile.js` for additional commands.
 
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
-*Note:* this is an opinionated module: please create a [ticket](https://github.com/Bartvds/ministyle/issues) to discuss any big ideas. Pull requests for bug fixes are of course always welcome. 
+*Note:* this is an opinionated module: please create a [ticket](https://github.com/Bartvds/minitable/issues) to discuss any big ideas. Pull requests for bug fixes are of course always welcome. 
 
 ## License
 

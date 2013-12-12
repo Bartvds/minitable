@@ -1,6 +1,6 @@
 {
   "name": "minitable",
-  "description": "Minimal semantic table styler/writer",
+  "description": "Minimal table-layout for semantic styler/writer",
   "version": "0.0.1",
   "homepage": "https://github.com/Bartvds/minitable",
   "author": {
@@ -22,11 +22,11 @@
   ],
   "keywords": [
     "cli",
+    "text",
     "ansi",
     "color",
-    "stream",
-    "adapter",
     "style",
+    "layout",
     "table"
   ],
   "main": "lib/index.js",
@@ -37,6 +37,7 @@
     "test": "grunt test"
   },
   "dependencies": {
+    "minichain": "~0.0.1",
     "ministyle": "~0.1.2",
     "miniwrite": "~0.1.2"
   },

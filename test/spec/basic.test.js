@@ -326,7 +326,7 @@ describe('basics', function () {
 		table.next();
 		table.row.colA.out.plain('aa2').ln().plain('aa2').ln();
 		table.row.colB.out.accent('bb2').plain('bb2').accent('\nbb2\nbb2').ln();
-		table.row.colC.out.plain('cc2\bcc2').ln();
+		table.row.colC.out.plain('cc2 cc2').ln();
 
 		builder.flush();
 
