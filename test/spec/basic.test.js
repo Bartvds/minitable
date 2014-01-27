@@ -62,7 +62,7 @@ describe('basics', function () {
 		assert.deepEqual(actual, expected);
 	});
 
-	it('pads wider or missing rows', function () {
+	it('does not pad inset row', function () {
 		var buffer = miniwrite.buffer();
 		var builder = minitable.getBuilder(buffer, ministyle.plain());
 		assert.isObject(builder);
@@ -92,7 +92,7 @@ describe('basics', function () {
 
 		var expected = [
 			'aa1aabb1  cc1',
-			'aa2  bb2bb   ',
+			'aa2  bb2bb',
 			'aa3       cc1'
 		].join('\n');
 
@@ -134,12 +134,12 @@ describe('basics', function () {
 		builder.flush();
 
 		var expected = [
-			'aa1bb1 cc1  ',
-			'aa1         ',
-			'aa2bb2 cc2  ',
-			'   bb21     ',
-			'   b2       ',
-			'aa3bb3 cc3  ',
+			'aa1bb1 cc1',
+			'aa1    ',
+			'aa2bb2 cc2',
+			'   bb21',
+			'   b2  ',
+			'aa3bb3 cc3',
 			'       cc3cc'
 		].join('\n');
 
@@ -199,7 +199,7 @@ describe('basics', function () {
 			},
 			{
 				name: 'colB',
-				halign: 'center',
+				halign: 'center'
 			},
 			{
 				name: 'colC',
@@ -331,9 +331,9 @@ describe('basics', function () {
 		builder.flush();
 
 		var expected = [
-			'[plain|aa1][accnt|bb1]      [plain|cc1]    ',
+			'[plain|aa1][accnt|bb1]      [plain|cc1]',
 			'[plain|aa2][accnt|bb2][plain|bb2][accnt|bb2][plain|cc2 cc2]',
-			'[plain|aa2][accnt|bb2]             '
+			'[plain|aa2][accnt|bb2]      '
 		].join('\n');
 
 		var actual = buffer.concat('\n', '', false);
