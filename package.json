@@ -1,7 +1,7 @@
 {
   "name": "minitable",
   "description": "Minimal table-layout for semantic styler/writer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/Bartvds/minitable",
   "author": {
     "name": "Bart van der Schoor",
@@ -37,7 +37,9 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "miniwrite": "~0.1.2"
+    "miniwrite": "~0.1.2",
+    "minichain": "~0.0.1",
+    "ministyle": "~0.1.2"
   },
   "peerDependencies": {
     "minichain": "~0.0.1",
