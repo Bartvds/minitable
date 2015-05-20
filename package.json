@@ -42,7 +42,6 @@
     "ministyle": "~0.1.2"
   },
   "peerDependencies": {
-    "minichain": "~0.0.1",
     "ministyle": "~0.1.2"
   },
   "devDependencies": {
